@@ -1,11 +1,11 @@
-### 🧘‍♀️ Fitness Booking App
+## 🧘‍♀️ Fitness Booking App
 
 A Django REST API project to browse and book fitness classes like Yoga, Zumba, and HIIT.
 
 ---
 
 
-## 🚀 Setup Instructions
+### 🚀 Setup Instructions
 
 1. Clone the repository
 
@@ -35,7 +35,7 @@ python manage.py runserver
 
 
 
-## 📬 API Endpoints
+### 📬 API Endpoints
 
 ## Get all fitness classes
 
