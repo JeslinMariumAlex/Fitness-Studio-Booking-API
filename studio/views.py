@@ -11,30 +11,41 @@ def get_classes(request):
     """
     Retrieve all fitness classes.
     """
-    classes = FitnessClass.objects.filter(date__gte=localtime().date()).order_by('datetime')
+    classes = FitnessClass.objects.filter(datetime__gte=localtime()).order_by('datetime')
     serializer = FitnessClassSerializer(classes, many=True)
     return Response(serializer.data)
 
 @api_view(['POST'])
 def book_class(request):
-    """
-    Book a fitness class.
-    """
-    class_id = request.data.get('class_id')
-    name = request.data.get('name')
-    email = request.data.get('email')
-    if not all([class_id, name, email]):
+    data = request.data
+    try:
+        class_id = data['class_id']
+        name = data['client_name']
+        email = data['client_email']
+    except KeyError:
         return Response({"error": "Missing required fields"}, status=status.HTTP_400_BAD_REQUEST)
+
     try:
         fitness_class = FitnessClass.objects.get(id=class_id)
     except FitnessClass.DoesNotExist:
-        return Response({"error": "Fitness class not found"}, status=status.HTTP_404_NOT_FOUND)
-    if fitness_class.available_slots <1:
-        return Response({"error": "No available slots for this class"}, status=status.HTTP_400_BAD_REQUEST)
-    booking = Booking.objects.create(fitness_class=fitness_class, name=name, email=email)
+        return Response({"error": "Class not found"}, status=status.HTTP_404_NOT_FOUND)
+
+    if fitness_class.available_slots <= 0:
+        return Response({"error": "No slots available"}, status=status.HTTP_400_BAD_REQUEST)
+
+    # Create booking
+    Booking.objects.create(
+        fitness_class=fitness_class,
+        client_name=name,
+        client_email=email
+    )
+
+    # Decrease available slots
     fitness_class.available_slots -= 1
     fitness_class.save()
-    return Response({"message": "Booking successful", "booking_id": booking.id}, status=status.HTTP_201_CREATED)
+
+    return Response({"message": "Booking successful"}, status=status.HTTP_201_CREATED)
+
 
 @api_view(['GET'])
 def get_bookings(request):

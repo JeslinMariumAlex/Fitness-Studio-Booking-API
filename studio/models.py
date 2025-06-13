@@ -10,7 +10,7 @@ class FitnessClass(models.Model):
     available_slots = models.IntegerField()
 
     def __str__(self):
-        return f"{self.name} by {self.instfructor} on {self.datetime}"
+        return f"{self.name} by {self.instructor} on {self.datetime}"
     
 class Booking(models.Model):
     fitness_class = models.ForeignKey(FitnessClass, on_delete=models.CASCADE)
