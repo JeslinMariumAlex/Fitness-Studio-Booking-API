@@ -11,12 +11,16 @@ def get_classes(request):
     """
     Retrieve all fitness classes.
     """
-    classes = FitnessClass.objects.filter(datetime__gte=localtime()).order_by('datetime')
+    classes = FitnessClass.objects.all().order_by('datetime')
     serializer = FitnessClassSerializer(classes, many=True)
     return Response(serializer.data)
 
 @api_view(['POST'])
 def book_class(request):
+    """
+    Book a fitness class.
+    Expects JSON data with 'class_id', 'client_name', and 'client_email'.
+    """
     data = request.data
     try:
         class_id = data['class_id']
