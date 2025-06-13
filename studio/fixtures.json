@@ -1,0 +1,45 @@
+[
+  {
+    "model": "studio.fitnessclass",
+    "pk": 1,
+    "fields": {
+      "name": "Morning Yoga",
+      "instructor": "Asha",
+      "datetime": "2025-06-14T08:28:48Z",
+      "total_slots": 10,
+      "available_slots": 9
+    }
+  },
+  {
+    "model": "studio.fitnessclass",
+    "pk": 6,
+    "fields": {
+      "name": "Zumba",
+      "instructor": "Dakota",
+      "datetime": "2025-06-13T08:29:12Z",
+      "total_slots": 10,
+      "available_slots": 10
+    }
+  },
+  {
+    "model": "studio.fitnessclass",
+    "pk": 9,
+    "fields": {
+      "name": "HIIT",
+      "instructor": "Miley",
+      "datetime": "2025-06-13T08:42:44Z",
+      "total_slots": 10,
+      "available_slots": 10
+    }
+  },
+  {
+    "model": "studio.booking",
+    "pk": 1,
+    "fields": {
+      "fitness_class": 1,
+      "client_name": "Jeslin",
+      "client_email": "jeslin@example.com",
+      "booked_at": "2025-06-13T08:13:10Z"
+    }
+  }
+]
