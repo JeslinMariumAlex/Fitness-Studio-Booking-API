@@ -1,48 +1,48 @@
-## 🧘‍♀️ Fitness Booking App
+# 🧘‍♀️ Fitness Booking App
 
 A Django REST API project to browse and book fitness classes like Yoga, Zumba, and HIIT.
 
 ---
 
 
-### 🚀 Setup Instructions
+## 🚀 Setup Instructions
 
-1. Clone the repository
+### 1. Clone the repository
 
 git clone https://github.com/your-username/fitness-booking.git
 cd fitness-booking
 
-2. Create and activate a virtual environment
+### 2. Create and activate a virtual environment
 
 python3 -m venv env
 source env/bin/activate
 
-3. Install dependencies
+### 3. Install dependencies
 
 pip install -r requirements.txt
 
-4. Run database migrations
+### 4. Run database migrations
 
 python manage.py migrate
 
-5. Load sample data
+### 5. Load sample data
 
 python manage.py loaddata studio/fixtures.json
 
-6. Run the development server
+### 6. Run the development server
 
 python manage.py runserver
 
 
 
-### 📬 API Endpoints
+## 📬 API Endpoints
 
-## Get all fitness classes
+### Get all fitness classes
 
 GET /api/classes/
 
 
-## Book a fitness class
+### Book a fitness class
 
 POST /api/book/
 
@@ -54,27 +54,27 @@ Body (JSON):
 }
 
 
-## View your bookings by email
+### View your bookings by email
 
 GET /api/bookings/?email=jeslin@example.com
 
-### 🧪 Sample cURL Request
+## 🧪 Sample cURL Request
 
 curl -X POST http://127.0.0.1:8000/api/book/ \
   -H "Content-Type: application/json" \
   -d '{"client_name": "Jeslin", "client_email": "jeslin@example.com", "fitness_class": 1}'
 
-### 📝 Sample Data
+## 📝 Sample Data
 
 Seed data is located in:
 studio/fixtures.json
 
 
-### 📹 Loom Walkthrough 
+## 📹 Loom Walkthrough 
 🎥 Watch the video demo here: Loom Video
 
 
-### 🛠 Tech Stack
+## 🛠 Tech Stack
 
 -Python
 
@@ -85,7 +85,7 @@ studio/fixtures.json
 -SQLite (Default)
 
 
-### ✅ Author
+## ✅ Author
 
 Jeslin Marium Alex
 
