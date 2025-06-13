@@ -58,11 +58,13 @@ Body (JSON):
 
 GET /api/bookings/?email=jeslin@example.com
 
+
 ## 🧪 Sample cURL Request
 
 curl -X POST http://127.0.0.1:8000/api/book/ \
   -H "Content-Type: application/json" \
   -d '{"client_name": "Jeslin", "client_email": "jeslin@example.com", "fitness_class": 1}'
+
 
 ## 📝 Sample Data
 
@@ -76,13 +78,13 @@ studio/fixtures.json
 
 ## 🛠 Tech Stack
 
--Python
+- Python
 
--Django
+- Django
 
--Django REST Framework
+- Django REST Framework
 
--SQLite (Default)
+- SQLite (Default)
 
 
 ## ✅ Author
