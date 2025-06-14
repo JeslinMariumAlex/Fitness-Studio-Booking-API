@@ -9,7 +9,7 @@ A Django REST API project to browse and book fitness classes like Yoga, Zumba, a
 
 ### 1. Clone the repository
 
-<pre>git clone https://github.com/JeslinMariumAlex/Fitness-Studio-Booking-API.git
+<pre> ```bash git clone https://github.com/JeslinMariumAlex/Fitness-Studio-Booking-API.git
 cd fitness-booking</pre>
 
 ### 2. Create and activate a virtual environment
