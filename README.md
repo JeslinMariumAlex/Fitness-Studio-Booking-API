@@ -16,26 +16,34 @@ cd fitness-booking
 
 ### 2. Create and activate a virtual environment
 
+```bash
 python3 -m venv env
 source env/bin/activate
+```
 
 ### 3. Install dependencies
 
+```bash
 pip install -r requirements.txt
+```
 
 ### 4. Run database migrations
 
+```bash
 python manage.py migrate
+```
 
 ### 5. Load sample data
 
+```bash
 python manage.py loaddata studio/fixtures.json
+```
 
 ### 6. Run the development server
 
-<pre> ```bash 
-python manage.py migrate python manage.py runserver ``` </pre>
-
+```bash 
+python manage.py migrate python manage.py runserver 
+```
 
 
 ## 📬 API Endpoints
