@@ -115,7 +115,7 @@ studio/fixtures.json
 
 ## 👩‍💻 Author
 
-Jeslin Marium Alex
+**Jeslin Marium Alex**
 
 ## 📹 Loom Video Walkthrough
 
