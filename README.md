@@ -17,32 +17,32 @@ git clone https://github.com/JeslinMariumAlex/Fitness-Studio-Booking-API.git
 cd fitness-booking
 ```
 
-### 2. Create and activate a virtual environment
+ 2. **Create and activate a virtual environment**
 
 ```bash
 python3 -m venv env
 source env/bin/activate
 ```
 
-### 3. Install dependencies
+3. **Install dependencies**
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Run database migrations
+4. **Run database migrations**
 
 ```bash
 python3 manage.py migrate
 ```
 
-### 5. Load sample data
+5. **Load sample data**
 
 ```bash
 python3 manage.py loaddata studio/fixtures.json
 ```
 
-### 6. Run the development server
+6. **Run the development server**
 
 ```bash 
 python3 manage.py runserver 
