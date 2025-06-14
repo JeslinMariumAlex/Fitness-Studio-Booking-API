@@ -102,11 +102,6 @@ Seed data is located in:
 studio/fixtures.json
 ```
 
-
-## 📹 Loom Walkthrough 
-🎥 Watch the video demo here: Loom Video
-
-
 ## 🛠 Tech Stack
 
 - Python
@@ -118,11 +113,13 @@ studio/fixtures.json
 - SQLite (Default)
 
 
-## ✅ Author
+## 👩‍💻 Author
 
 Jeslin Marium Alex
 
+## 📹 Loom Video Walkthrough
 
+🎥 Watch the video demo here: Loom Video
 
 
 
