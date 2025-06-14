@@ -33,7 +33,8 @@ python manage.py loaddata studio/fixtures.json
 
 ### 6. Run the development server
 
-<pre> ```bash python manage.py migrate python manage.py runserver ``` </pre>
+<pre> ```bash 
+python manage.py migrate python manage.py runserver ``` </pre>
 
 
 
