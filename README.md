@@ -24,7 +24,7 @@ python3 -m venv env
 source env/bin/activate
 ```
 
-3. **Install dependencies**
+3. **Install the required packages**
 
 ```bash
 pip install -r requirements.txt
@@ -51,46 +51,56 @@ python3 manage.py runserver
 
 ## 🔌 API Endpoints
 
-1. **Get All Classes**
+1. **Get all fitness classes**
 
+Endpoint:
 ```bash 
 GET /api/classes/
+```
+Sample cURL:
+```bash 
+curl http://127.0.0.1:8000/api/classes/
 ```
 
 
 2.**Book a fitness class**
 
+Endpoint:
 ```bash 
 POST /api/book/
-
-Body (JSON):
+```
+Request Body (JSON):
+```bash 
 {
   "client_name": "Jeslin",
   "client_email": "jeslin@example.com",
   "fitness_class": 1
 }
 ```
-
-
-3.**View your bookings by email**
-
-```bash 
-GET /api/bookings/?email=jeslin@example.com
-```
-
-
-## 🧪 Sample cURL Request
-
+Sample cURL:
 ```bash 
 curl -X POST http://127.0.0.1:8000/api/book/ \
   -H "Content-Type: application/json" \
   -d '{"client_name": "Jeslin", "client_email": "jeslin@example.com", "fitness_class": 1}'
 ```
 
+3.**View your bookings by email**
+
+Endpoint:
+```bash 
+GET /api/bookings/?email=jeslin@example.com
+```
+Sample cURL:
+```bash 
+curl http://127.0.0.1:8000/api/bookings/?email=jeslin@example.com
+```
+
 ## 📝 Sample Data
 
 Seed data is located in:
+```bash 
 studio/fixtures.json
+```
 
 
 ## 📹 Loom Walkthrough 
