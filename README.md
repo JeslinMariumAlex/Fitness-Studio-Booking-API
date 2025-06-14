@@ -1,13 +1,16 @@
-# 🧘‍♀️ Fitness Booking App
+# 🧘‍♀️ Fitness Studio Booking API
 
-A Django REST API project to browse and book fitness classes like Yoga, Zumba, and HIIT.
+A simple Django REST API for a fictional fitness studio where users can:
+- View available fitness classes
+- Book a class
+- View their bookings
 
 ---
 
 
-## 🚀 Setup Instructions
+## 🔧 Setup Instructions
 
-### 1. Clone the repository
+1. **Clone the project**
 
 ```bash
 git clone https://github.com/JeslinMariumAlex/Fitness-Studio-Booking-API.git
@@ -30,25 +33,25 @@ pip install -r requirements.txt
 ### 4. Run database migrations
 
 ```bash
-python manage.py migrate
+python3 manage.py migrate
 ```
 
 ### 5. Load sample data
 
 ```bash
-python manage.py loaddata studio/fixtures.json
+python3 manage.py loaddata studio/fixtures.json
 ```
 
 ### 6. Run the development server
 
 ```bash 
-python manage.py migrate python manage.py runserver 
+python3 manage.py runserver 
 ```
 
 
-## 📬 API Endpoints
+## 🔌 API Endpoints
 
-### Get all fitness classes
+### 📍 GET /api/classes/
 
 GET /api/classes/
 
