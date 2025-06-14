@@ -51,13 +51,16 @@ python3 manage.py runserver
 
 ## 🔌 API Endpoints
 
-### 📍 GET /api/classes/
+1. **Get All Classes**
 
+```bash 
 GET /api/classes/
+```
 
 
-### Book a fitness class
+2.**Book a fitness class**
 
+```bash 
 POST /api/book/
 
 Body (JSON):
@@ -66,19 +69,23 @@ Body (JSON):
   "client_email": "jeslin@example.com",
   "fitness_class": 1
 }
+```
 
 
-### View your bookings by email
+3.**View your bookings by email**
 
+```bash 
 GET /api/bookings/?email=jeslin@example.com
+```
 
 
 ## 🧪 Sample cURL Request
 
+```bash 
 curl -X POST http://127.0.0.1:8000/api/book/ \
   -H "Content-Type: application/json" \
   -d '{"client_name": "Jeslin", "client_email": "jeslin@example.com", "fitness_class": 1}'
-
+```
 
 ## 📝 Sample Data
 
