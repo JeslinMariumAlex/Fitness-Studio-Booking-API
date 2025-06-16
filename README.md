@@ -82,7 +82,7 @@ Sample cURL:
 ```bash 
 curl -X POST http://127.0.0.1:8000/api/book/ \
   -H "Content-Type: application/json" \
-  -d '{"client_name": "Jeslin", "client_email": "jeslin@example.com", "fitness_class": 1}'
+  -d '{"class_id": 1, "client_name": "Jeslin", "client_email": "jeslin@example.com"}'
 ```
 
 3.**View your bookings by email**
