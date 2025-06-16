@@ -11,7 +11,7 @@ def get_classes(request):
     """
     Retrieve all fitness classes.
     """
-    classes = FitnessClass.objects.all().order_by('datetime')
+    classes = FitnessClass.objects.filter(datetime__gte=localtime()).order_by('datetime')
     serializer = FitnessClassSerializer(classes, many=True)
     return Response(serializer.data)
 

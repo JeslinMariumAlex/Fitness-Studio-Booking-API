@@ -1,45 +1,55 @@
 [
-  {
-    "model": "studio.fitnessclass",
-    "pk": 1,
-    "fields": {
-      "name": "Morning Yoga",
-      "instructor": "Asha",
-      "datetime": "2025-06-14T08:28:48Z",
-      "total_slots": 10,
-      "available_slots": 9
+    {
+        "model": "studio.fitnessclass",
+        "pk": 1,
+        "fields": {
+            "name": "Yoga",
+            "instructor": "Asha",
+            "datetime": "2025-06-25T00:30:00Z",
+            "total_slots": 10,
+            "available_slots": 8
+        }
+    },
+    {
+        "model": "studio.fitnessclass",
+        "pk": 6,
+        "fields": {
+            "name": "Zumba",
+            "instructor": "Dakota",
+            "datetime": "2025-06-25T01:30:00Z",
+            "total_slots": 10,
+            "available_slots": 9
+        }
+    },
+    {
+        "model": "studio.fitnessclass",
+        "pk": 9,
+        "fields": {
+            "name": "HIIT",
+            "instructor": "Miley",
+            "datetime": "2025-06-25T02:30:00Z",
+            "total_slots": 10,
+            "available_slots": 9
+        }
+    },
+    {
+        "model": "studio.booking",
+        "pk": 4,
+        "fields": {
+            "fitness_class": 6,
+            "client_name": "Taylor",
+            "client_email": "taylor@example.com",
+            "booked_at": "2025-06-16T17:02:20.770Z"
+        }
+    },
+    {
+        "model": "studio.booking",
+        "pk": 5,
+        "fields": {
+            "fitness_class": 9,
+            "client_name": "Jeslin",
+            "client_email": "jeslin@example.com",
+            "booked_at": "2025-06-16T17:02:38.099Z"
+        }
     }
-  },
-  {
-    "model": "studio.fitnessclass",
-    "pk": 6,
-    "fields": {
-      "name": "Zumba",
-      "instructor": "Dakota",
-      "datetime": "2025-06-13T08:29:12Z",
-      "total_slots": 10,
-      "available_slots": 10
-    }
-  },
-  {
-    "model": "studio.fitnessclass",
-    "pk": 9,
-    "fields": {
-      "name": "HIIT",
-      "instructor": "Miley",
-      "datetime": "2025-06-13T08:42:44Z",
-      "total_slots": 10,
-      "available_slots": 10
-    }
-  },
-  {
-    "model": "studio.booking",
-    "pk": 1,
-    "fields": {
-      "fitness_class": 1,
-      "client_name": "Jeslin",
-      "client_email": "jeslin@example.com",
-      "booked_at": "2025-06-13T08:13:10Z"
-    }
-  }
 ]

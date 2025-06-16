@@ -72,10 +72,11 @@ POST /api/book/
 Request Body (JSON):
 ```bash 
 {
+  "class_id": 1,
   "client_name": "Jeslin",
-  "client_email": "jeslin@example.com",
-  "fitness_class": 1
+  "client_email": "jeslin@example.com"
 }
+
 ```
 Sample cURL:
 ```bash 
