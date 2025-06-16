@@ -14,7 +14,7 @@ A simple Django REST API for a fictional fitness studio where users can:
 
 ```bash
 git clone https://github.com/JeslinMariumAlex/Fitness-Studio-Booking-API.git
-cd fitness-booking
+cd Fitness-Studio-Booking-API
 ```
 
  2. **Create and activate a virtual environment**
