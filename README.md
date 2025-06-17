@@ -120,8 +120,7 @@ studio/fixtures.json
 
 ## 📹 Loom Video Walkthrough
 
-🎥 Watch the video demo here: Loom Video
-
+🎥 Watch the video demo here: https://www.loom.com/share/bca0259b919c42a7acde9b563cb54723?sid=c1bd58a3-40ac-4642-adca-82f9c974673f
 
 
 
