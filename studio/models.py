@@ -10,6 +10,7 @@ class FitnessClass(models.Model):
     total_slots = models.IntegerField()
     available_slots = models.IntegerField()
 
+
     def __str__(self):
         local_dt = localtime(self.datetime)
         return f"{self.name} by {self.instructor} on {local_dt.strftime('%Y-%m-%d %I:%M %p')}"
