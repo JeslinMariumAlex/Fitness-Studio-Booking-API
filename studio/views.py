@@ -37,6 +37,9 @@ def book_class(request):
     if fitness_class.available_slots <= 0:
         return Response({"error": "No slots available"}, status=status.HTTP_400_BAD_REQUEST)
 
+    if Booking.objects.filter(fitness_class=fitness_class, client_email=email).exists():
+        return Response({"error": "You have already booked this class"}, status=status.HTTP_400_BAD_REQUEST)
+
     # Create booking
     Booking.objects.create(
         fitness_class=fitness_class,
